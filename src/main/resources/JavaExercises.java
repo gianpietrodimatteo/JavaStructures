@@ -292,6 +292,238 @@ public class JavaExercises {
         mapA._______(mapB);
 
 
+        // ============================================================
+        // EXERCISE 15: Characters
+        // ============================================================
+
+        // 15a. Declare a char with value 'A'
+        _______ letter = 'A';
+
+        // 15b. Declare a char using unicode for 'B' (unicode: \u0042)
+        char unicodeLetter = _______;
+
+        // 15c. Check if 'a' is a letter
+        boolean isLetter = _______.isLetter('a');
+
+        // 15d. Check if '5' is a digit
+        boolean isDigit = Character._______('5');
+
+        // 15e. Convert 'a' to uppercase
+        char upper = _______.toUpperCase('a');
+
+        // 15f. Convert 'Z' to lowercase
+        char lower = Character._______('Z');
+
+
+        // ============================================================
+        // EXERCISE 16: String Basics
+        // ============================================================
+
+        // 16a. Create a string with value "Hello"
+        _______ greeting = "Hello";
+
+        // 16b. Get the length of the string
+        int strLen = greeting._______();
+
+        // 16c. Get the character at index 1
+        char secondChar = greeting._______(1);
+
+        // 16d. Get substring from index 1 to 3 (not including 3)
+        String sub = greeting._______(1, 3);
+
+        // 16e. Convert to uppercase
+        String upperStr = greeting._______();
+
+        // 16f. Convert to lowercase
+        String lowerStr = greeting._______();
+
+        // 16g. Trim whitespace from "  hello  "
+        String trimmed = "  hello  "._______;
+
+        // 16h. Replace 'l' with 'L' in "hello"
+        String replaced = "hello"._______(_______, _______);
+
+
+        // ============================================================
+        // EXERCISE 17: String Methods
+        // ============================================================
+
+        String text = "Java Programming";
+
+        // 17a. Check if text starts with "Java"
+        boolean starts = text._______("Java");
+
+        // 17b. Check if text ends with "ing"
+        boolean ends = text._______("ing");
+
+        // 17c. Check if text contains "Program"
+        boolean contains = text._______("Program");
+
+        // 17d. Find the index of first 'a'
+        int index = text._______('a');
+
+        // 17e. Find the index of last 'a'
+        int lastIndex = text._______('a');
+
+        // 17f. Check if string is empty
+        boolean empty = ""._______;
+
+
+        // ============================================================
+        // EXERCISE 18: String Comparison
+        // ============================================================
+
+        String s1 = "hello";
+        String s2 = "hello";
+        String s3 = "Hello";
+
+        // 18a. Compare s1 and s2 using equals
+        boolean equal = s1._______(s2);
+
+        // 18b. Compare s1 and s3 ignoring case
+        boolean equalIgnoreCase = s1._______(s3);
+
+        // 18c. Compare s1 and s2 using compareTo (returns 0 if equal)
+        int comparison = s1._______(s2);
+
+
+        // ============================================================
+        // EXERCISE 19: StringBuilder
+        // ============================================================
+
+        // 19a. Create a StringBuilder
+        _______ sb = new _______();
+
+        // 19b. Append "Java"
+        sb._______("Java");
+
+        // 19c. Append " is fun"
+        sb._______(_______);
+
+        // 19d. Convert to String
+        String result = sb._______();
+
+        // 19e. Insert " 17" at index 4
+        sb._______(4, " 17");
+
+        // 19f. Delete characters from index 4 to 7 (not including 7)
+        sb._______(4, 7);
+
+        // 19g. Reverse the StringBuilder
+        sb._______();
+
+
+        // ============================================================
+        // EXERCISE 20: Char and String Conversions
+        // ============================================================
+
+        // 20a. Convert char 'A' to String using String.valueOf()
+        char ch = 'A';
+        String fromChar = _______.valueOf(ch);
+
+        // 20b. Convert char 'B' to String using concatenation
+        String fromChar2 = _______ + 'B';
+
+        // 20c. Convert String "Hello" to char array
+        String word = "Hello";
+        char[] charArray = word._______();
+
+        // 20d. Convert char array {'J', 'a', 'v', 'a'} to String
+        char[] chars = {'J', 'a', 'v', 'a'};
+        String fromArray = new _______(chars);
+
+        // 20e. Get first character from String "X"
+        String single = "X";
+        char firstChar = single._______(0);
+
+
+        // ============================================================
+        // EXERCISE 21: Looping Through Strings
+        // ============================================================
+
+        String loopStr = "Java";
+
+        // 21a. Loop using charAt() - fill in the condition
+        for (int i = 0; _______ < loopStr._______; i++) {
+            char c = loopStr._______(i);
+        }
+
+        // 21b. Loop using toCharArray() with enhanced for
+        for (_______ c : loopStr._______()) {
+            System.out.println(c);
+        }
+
+        // 21c. Loop backwards - fill in the initialization and condition
+        for (int i = loopStr._______ - 1; _______ >= 0; i--) {
+            System.out.println(loopStr.charAt(i));
+        }
+
+
+        // ============================================================
+        // EXERCISE 22: Parsing
+        // ============================================================
+
+        // 22a. Parse "123" to int
+        String numStr = "123";
+        int num = _______._______(numStr);
+
+        // 22b. Parse "45.67" to double
+        String doubleStr = "45.67";
+        double d = _______._______(doubleStr);
+
+        // 22c. Convert int 42 to String using String.valueOf()
+        int number = 42;
+        String str = _______.valueOf(number);
+
+        // 22d. Convert int 99 to String using Integer.toString()
+        String str2 = _______._______(99);
+
+
+        // ============================================================
+        // EXERCISE 23: String Formatting
+        // ============================================================
+
+        String name = "Alice";
+        int age = 30;
+
+        // 23a. Use String.format() to create "Name: Alice, Age: 30"
+        String formatted = _______._______("Name: %s, Age: %d", name, age);
+
+
+        // ============================================================
+        // EXERCISE 24: Split and Join
+        // ============================================================
+
+        // 24a. Split "apple,banana,cherry" by comma
+        String csv = "apple,banana,cherry";
+        String[] fruits = csv._______(",");
+
+        // 24b. Split "one two three" by space
+        String sentence = "one two three";
+        String[] words2 = sentence._______(_______);
+
+        // 24c. Join array {"red", "green", "blue"} with ", "
+        String[] colors2 = {"red", "green", "blue"};
+        String joined = _______.join(_______, colors2);
+
+
+        // ============================================================
+        // EXERCISE 25: Common String Patterns
+        // ============================================================
+
+        // 25a. Reverse a string "hello" using StringBuilder
+        String toReverse = "hello";
+        String reversed = new _______(toReverse)._______().toString();
+
+        // 25b. Check if "racecar" is a palindrome
+        String palindrome = "racecar";
+        boolean isPalindrome = palindrome.equals(new StringBuilder(palindrome)._______.toString());
+
+        // 25c. Remove all spaces from "h e l l o"
+        String withSpaces = "h e l l o";
+        String noSpaces = withSpaces._______(" ", "");
+
+
         System.out.println("\n=== All exercises completed! ===");
     }
 }
@@ -397,4 +629,75 @@ public class JavaExercises {
  * EXERCISE 14: Combining Collections
  * 14a. addAll
  * 14b. putAll
+ *
+ * EXERCISE 15: Characters
+ * 15a. char
+ * 15b. '\u0042'
+ * 15c. Character
+ * 15d. isDigit
+ * 15e. Character
+ * 15f. toLowerCase
+ *
+ * EXERCISE 16: String Basics
+ * 16a. String
+ * 16b. length
+ * 16c. charAt
+ * 16d. substring
+ * 16e. toUpperCase
+ * 16f. toLowerCase
+ * 16g. trim()
+ * 16h. replace, 'l', 'L'
+ *
+ * EXERCISE 17: String Methods
+ * 17a. startsWith
+ * 17b. endsWith
+ * 17c. contains
+ * 17d. indexOf
+ * 17e. lastIndexOf
+ * 17f. isEmpty()
+ *
+ * EXERCISE 18: String Comparison
+ * 18a. equals
+ * 18b. equalsIgnoreCase
+ * 18c. compareTo
+ *
+ * EXERCISE 19: StringBuilder
+ * 19a. StringBuilder, StringBuilder
+ * 19b. append
+ * 19c. append, " is fun"
+ * 19d. toString
+ * 19e. insert
+ * 19f. delete
+ * 19g. reverse
+ *
+ * EXERCISE 20: Char and String Conversions
+ * 20a. String
+ * 20b. ""
+ * 20c. toCharArray
+ * 20d. String
+ * 20e. charAt
+ *
+ * EXERCISE 21: Looping Through Strings
+ * 21a. i, length, charAt
+ * 21b. char, toCharArray
+ * 21c. length, i
+ *
+ * EXERCISE 22: Parsing
+ * 22a. Integer, parseInt
+ * 22b. Double, parseDouble
+ * 22c. String
+ * 22d. Integer, toString
+ *
+ * EXERCISE 23: String Formatting
+ * 23a. String, format
+ *
+ * EXERCISE 24: Split and Join
+ * 24a. split
+ * 24b. split, " "
+ * 24c. String, ", "
+ *
+ * EXERCISE 25: Common String Patterns
+ * 25a. StringBuilder, reverse
+ * 25b. reverse()
+ * 25c. replace
  */
