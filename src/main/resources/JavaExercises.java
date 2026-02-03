@@ -9,7 +9,7 @@ import java.util.*;
  * 3. Compile and run to check your answers
  * 4. Solutions are at the bottom of this file (no peeking!)
  */
-public class JavaExercises {
+public class JavaExercisesSolution {
 
     public static void main(String[] args) {
 
@@ -366,7 +366,7 @@ public class JavaExercises {
         int lastIndex = text._______('a');
 
         // 17f. Check if string is empty
-        boolean empty = ""._______;
+        boolean empty2 = ""._______;
 
 
         // ============================================================
@@ -377,13 +377,13 @@ public class JavaExercises {
         String s2 = "hello";
         String s3 = "Hello";
 
-        // 18a. Compare s1 and s2 using equals
+        // 18a. Compare s1 and s2
         boolean equal = s1._______(s2);
 
         // 18b. Compare s1 and s3 ignoring case
         boolean equalIgnoreCase = s1._______(s3);
 
-        // 18c. Compare s1 and s2 using compareTo (returns 0 if equal)
+        // 18c. Compare s1 and s2 (returns 0 if equal)
         int comparison = s1._______(s2);
 
 
@@ -394,7 +394,7 @@ public class JavaExercises {
         // 19a. Create a StringBuilder
         _______ sb = new _______();
 
-        // 19b. Append "Java"
+        // 19b. Concatenate "Java"
         sb._______("Java");
 
         // 19c. Append " is fun"
@@ -406,7 +406,7 @@ public class JavaExercises {
         // 19e. Insert " 17" at index 4
         sb._______(4, " 17");
 
-        // 19f. Delete characters from index 4 to 7 (not including 7)
+        // 19f. Remove characters from index 4 to 7 (not including 7)
         sb._______(4, 7);
 
         // 19g. Reverse the StringBuilder
@@ -417,12 +417,12 @@ public class JavaExercises {
         // EXERCISE 20: Char and String Conversions
         // ============================================================
 
-        // 20a. Convert char 'A' to String using String.valueOf()
+        // 20a. Convert char 'A' to String using String
         char ch = 'A';
-        String fromChar = _______.valueOf(ch);
+        String fromChar = _______._______(ch);
 
         // 20b. Convert char 'B' to String using concatenation
-        String fromChar2 = _______ + 'B';
+        String fromChar2 = _______ _ 'B';
 
         // 20c. Convert String "Hello" to char array
         String word = "Hello";
@@ -430,7 +430,7 @@ public class JavaExercises {
 
         // 20d. Convert char array {'J', 'a', 'v', 'a'} to String
         char[] chars = {'J', 'a', 'v', 'a'};
-        String fromArray = new _______(chars);
+        String stringFromArray = new _______(chars);
 
         // 20e. Get first character from String "X"
         String single = "X";
@@ -443,12 +443,12 @@ public class JavaExercises {
 
         String loopStr = "Java";
 
-        // 21a. Loop using charAt() - fill in the condition
+        // 21a. Loop through chars - fill in the condition
         for (int i = 0; _______ < loopStr._______; i++) {
             char c = loopStr._______(i);
         }
 
-        // 21b. Loop using toCharArray() with enhanced for
+        // 21b. Loop using array of chars with enhanced for
         for (_______ c : loopStr._______()) {
             System.out.println(c);
         }
@@ -463,19 +463,19 @@ public class JavaExercises {
         // EXERCISE 22: Parsing
         // ============================================================
 
-        // 22a. Parse "123" to int
+        // 22a. Convert "123" to int
         String numStr = "123";
         int num = _______._______(numStr);
 
-        // 22b. Parse "45.67" to double
+        // 22b. Convert "45.67" to double
         String doubleStr = "45.67";
         double d = _______._______(doubleStr);
 
-        // 22c. Convert int 42 to String using String.valueOf()
+        // 22c. Convert int 42 to String
         int number = 42;
         String str = _______.valueOf(number);
 
-        // 22d. Convert int 99 to String using Integer.toString()
+        // 22d. Convert int 99 to String using Integer
         String str2 = _______._______(99);
 
 
@@ -486,7 +486,7 @@ public class JavaExercises {
         String name = "Alice";
         int age = 30;
 
-        // 23a. Use String.format() to create "Name: Alice, Age: 30"
+        // 23a. "Name: Alice, Age: 30"
         String formatted = _______._______("Name: %s, Age: %d", name, age);
 
 
