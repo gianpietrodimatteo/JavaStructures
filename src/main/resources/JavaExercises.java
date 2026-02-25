@@ -26,13 +26,24 @@ public class JavaExercisesSolution {
         // 1c. Set the first element to "hello" and last element to "world"
         words[_______] = "hello";
         words[_______] = "world";
-// 1d. Print all elements using enhanced for loop
+
+        // 1d. Print all elements using enhanced for loop
         for (_______ word : _______) {
             System.out.println(word);
         }
 
-        // 1e. Get the length of the array
+        // 1e. Get the size of the array
         int len = nums._______;
+
+        // 1f. Create an array of floats with 4 positions
+        _______ decimals = _______
+
+        // 1g. Create a vaeiable to hold the precise value for pi
+        // Note: double is 64-bit (15-17 decimal digits), float is 32-bit (6-7 digits)
+        _______ pi = 3.141592653589793d;
+
+        // 1h. Set the value for a float
+        float temperature = _______;
 
 
         // ============================================================
@@ -47,7 +58,7 @@ public class JavaExercisesSolution {
         names._______("Bob");
         names._______("Charlie");
 
-        // 2c. Insert "Zara" at the beginning (index 0)
+        // 2c. Replace "Zara" at the beginning (index 0)
         names._______(_______, "Zara");
 
         // 2d. Remove "Bob" by value
@@ -59,7 +70,7 @@ public class JavaExercisesSolution {
         // 2f. Check if "Alice" exists in the list
         boolean hasAlice = names._______("Alice");
 
-        // 2g. Get the size of the list
+        // 2g. Get the length of the list
         int size = names._______();
 
 
@@ -72,6 +83,18 @@ public class JavaExercisesSolution {
 
         // 3b. Create an immutable list with "x", "y", "z" (Java 9+)
         List<String> immutableList = _______.of("x", "y", "z");
+
+        // 3c. Create a Boolean array of 10 positions filled with false (default)
+        Boolean[] boolArray = new _______[10];
+
+        // 3d. Create and fill an array with pattern 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+        int[] pattern = new int[10];
+        for (int i = 0; i < pattern._______; i++) {
+            pattern[i] = _______;
+        }
+
+        // 3e. Create a list and fill 10 positions with value 0
+        List<Integer> zeros = new ArrayList<>(Collections._______(10, 0));
 
 
         // ============================================================
@@ -552,6 +575,9 @@ public class JavaExercisesSolution {
  * 1c. 0, 3
  * 1d. String, words
  * 1e. length
+ * 1f. float[], new float[4]
+ * 1g. double
+ * 1h. float
  *
  * EXERCISE 2: ArrayList
  * 2a. ArrayList<String>, ArrayList
@@ -565,6 +591,9 @@ public class JavaExercisesSolution {
  * EXERCISE 3: ArrayList One-Liners
  * 3a. List
  * 3b. List
+ * 3c. Boolean
+ * 3d. length, i+1
+ * 3e. nCopies
  *
  * EXERCISE 4: HashMap
  * 4a. HashMap, HashMap
